@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    color: rgb(0, 0, 0);
+}
+
+#formulario_fig {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+}
+
+#selecinamiento {
+    margin: 1.2rem 0;
+}
+
+#parametros {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+#circunferencia {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+#formulario_fig label {
+    margin: 0.3rem 0;
+}
+
+#formulario_fig label span {
+    font-size:medium;
+    font-weight: 800;
+    color: rgb(84, 84, 84);
+}
+
+
+#container_fig {
+    padding: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container_attr {
+    padding: 0 2rem;
+}
+
+#send {
+    background-color: green;
+    color: white;
+    padding: 0.1rem 0.3rem;
+    border: none;
+    border-radius: 6px;
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: medium;
+    margin-top: 1rem;
+}
+
+#send:hover {
+    background-color: rgb(103, 189, 103);
+    transform: scale(1.1);
+}
+
+.error_message {
+    font-size: small;
+    margin-top: 0.2rem;
+    font-weight: 600;
+    color: rgb(255, 3, 3);
+}
+
+#error_values {
+    font-size: small;
+    margin-top: 0.2rem;
+    font-weight: 600;
+    color: rgb(255, 3, 3);
+}

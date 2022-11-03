@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubo Financiero</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <form id="formulario_fig">
+            <label>Selecciona una figura geométrica</label>
+            <section id="selecinamiento">
+                <label for="figura">
+                    <span>Figura: </span>
+                    <select name="figura" id="figura">
+                        <option value="" selected>Selecciona una opción</option>
+                        <option value="cuadrado">Cuadrado</option>
+                        <option value="rectangulo">Rectángulo</option>
+                        <option value="triangulo">Triángulo</option>
+                        <option value="circulo">Círculo</option>
+                    </select>
+                    <div class="error_message" id="select_error"></div>
+                </label>
+            </section>
+            <section id="parametros">
+                <label for="base">
+                    <span>Base: </span>
+                    <input type="number" name="base" id="base" min="1" max="10">
+                    <div class="error_message" id="base_error"></div>
+                </label>
+                <label for="altura">
+                    <span>Altura: </span>
+                    <input type="number" name="altura" id="altura" min="1" max="10">
+                    <div class="error_message" id="altura_error"></div>
+                </label>
+            </section>
+            <section id="circunferencia">
+                <label for="radio">
+                    <span>Radio: </span>
+                    <input type="number" name="radio" id="radio" min="1" max="5">
+                    <div class="error_message" id="radio_error"></div>
+                </label>
+            </section>
+            <input type="button" id="send" value="Enviar">
+        </form>
+        <div id="container_attr">
+            <label>Area: </label><span id="area"></span>
+            <br>
+            <label>Perimetro: </label><span id="perimetro"></span>
+            <br>
+            <label id="error_values"></label>
+        </div>
+        <div id="container_fig"></div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
